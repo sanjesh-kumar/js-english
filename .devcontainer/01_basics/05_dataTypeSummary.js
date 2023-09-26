@@ -31,12 +31,40 @@ let myObj ={        // This is Object
 
 const myFunction = function(){   // This is function 
 
-    console.log("hello World ...");
+    // console.log("hello World ...");
 }
 
-console.log(typeof(bigNumber));
-console.log(typeof(outSideTemp));   // this is return object type
-console.log(typeof(myFunction));
+// console.log(typeof(bigNumber));
+// console.log(typeof(outSideTemp));   // this is return object type
+// console.log(typeof(myFunction));
+
+
+// ************************************Satck And Heap Memory*************************************//
+/*
+ Stack   ===> (used for primitive type value) isme hum jo bhi variable declared karte hai uski ek copy 
+                    milti hai.
+ 
+ Heap   ===> (used for non- primitive value) isme hum jo bhi variable declared karte hai uski hume ek 
+                reference milta hai.
+                */
+
+let myYoutubeName = "sanjeshRajput"
+let anotherName = myYoutubeName
+anotherName = "Abhishekpal"
+
+console.log(myYoutubeName);
+console.log(anotherName);
+
+let userOne = {
+    email: "sanjesh@gmail.com",
+    upi: "user@tbl"
+}
+
+let userTwo = userOne
+userTwo.email = "abhishekPal@gmail.com"
+
+console.log(userOne);
+console.log(userTwo);
 
 
 
